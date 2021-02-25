@@ -202,7 +202,7 @@ button.secondary{
         justify-content: space-evenly;
         align-items: stretch;
         flex-direction: column;
-        transform: translateX(100%);
+        
         
     }
 
