@@ -190,18 +190,19 @@ button.secondary{
         position: absolute;
         top: 10vh;
         right: 0;
-        width: 30vw;
+        width: 50vw;
         height: 60vh;
         background-color: var(--clr-black);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: stretch;
-        flex-direction: column;
+        
         display: none;
     }
 
     .nav_active{
-        display: block;
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: stretch;
+        flex-direction: column;
     }
 
     .nav_links li:hover{
