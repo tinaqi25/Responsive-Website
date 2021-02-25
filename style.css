@@ -42,7 +42,9 @@
 }
 
 body{
-    overflow-x:hidden ;
+    width: 100vw;
+    overflow-x:hidden;
+    
 }
 
 :root{
@@ -188,18 +190,18 @@ button.secondary{
         position: absolute;
         top: 10vh;
         right: 0;
-        width: 30vw;
+        width: 50vw;
         height: 60vh;
         background-color: var(--clr-black);
         display: flex;
         justify-content: space-evenly;
         align-items: stretch;
         flex-direction: column;
-        transform: translateX(100%);
+        display: none;
     }
 
     .nav_active{
-        transform: none;
+        display: block;
     }
 
     .nav_links li:hover{
