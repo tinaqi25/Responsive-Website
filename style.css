@@ -190,7 +190,7 @@ button.secondary{
         position: absolute;
         top: 10vh;
         right: 0;
-        width: 50vw;
+        width: 30vw;
         height: 60vh;
         background-color: var(--clr-black);
         display: flex;
