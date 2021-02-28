@@ -50,6 +50,7 @@ p{
 }
 
 
+
 button.primary{
     padding: 5px 20px;
     background-color: var(--clr-primary);
@@ -72,7 +73,7 @@ button.secondary{
 
 .container{
     
-    width: 85%;
+    width: 85vw;
     max-width: 1200px;
     margin: 0 auto;
 
@@ -84,9 +85,9 @@ button.secondary{
     
     .container{
         
-        width: 90%;
+        width: 90vw;
         margin: 0 auto;
-    
+         
     
     }
     
@@ -319,7 +320,7 @@ button.secondary{
 }
 
 .hero_text{
-    width: 50%;
+    width: 45%;
     padding: 4.5rem 5rem 4rem 3rem;
     display: flex;
     flex-direction: column;
@@ -335,7 +336,7 @@ button.secondary{
 
 .hero_image{
     position:relative;
-    width: 50%;
+    width: 55%;
     padding: 3rem 3rem;
        
 }
@@ -343,7 +344,7 @@ button.secondary{
 .img_wrap{
     position:relative;
     width: 100%;
-    height: 350px;
+    height: 400px;
 
 }
 
@@ -351,10 +352,11 @@ button.secondary{
 
 .hero_major{
     position:relative;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     border: 0.4rem solid var(--clr-primary);
     z-index: -1;
+    margin:0 0 auto auto;
    
     
 }
@@ -363,16 +365,17 @@ button.secondary{
     content:"";
     position:absolute;
     top:1.5rem;
-    right:1.5rem;
+    right:3rem;
    
-    width: inherit;
-    height: inherit;
+    width: 120%;
+    height: 120%;
     /*transform: translateX(5vh) translateY(-5vh);*/
    
     background-color: #D6D6D6;
     background-image:url('img/hero_img.jpg');
     background-blend-mode:luminosity;
-    background-size:cover;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -382,8 +385,8 @@ button.secondary{
 
 .hero_deco_bottom{
     position:absolute;
-    right: 97%;
-    top: 97%;
+    right: 95%;
+    top: 90%;
     width: 4rem;
     height: 4rem;
     border: 0.4rem solid var(--clr-black);
@@ -504,7 +507,7 @@ button.secondary{
     transition-property: background-color height;
     transition-duration:0.5s;
     transition-delay: 0.2s;
-    width: 25%;
+    width:25%;
     height: 100%;
 }
 
@@ -513,6 +516,7 @@ button.secondary{
     border:4px solid var(--clr-black);
     height: 140%;
     transform:translateY(-15%);
+    
     
 }
 
@@ -526,7 +530,7 @@ button.secondary{
 
 
 .service_card p{
-    width:12rem;
+    
     margin-top: 0.5rem;
     transition-property: color;
     transition-duration:0.5s;
@@ -566,7 +570,8 @@ button.secondary{
     .services{
         display: flex;
         flex-direction: column;
-        padding: 2rem 0;
+        padding: 0;
+        margin: auto 0;
         margin-top:6rem;
         height: auto;
         
@@ -574,12 +579,9 @@ button.secondary{
 
 
     .service_card{
-        padding: 1rem 2rem;
-        transition-property: background-color height;
-        transition-duration:0.5s;
-        transition-delay: 0.2s;
+        padding: 1rem 2rem 1.5rem 2rem;
         width: 100%;
-        height: 25%;
+        height: auto;
         margin-bottom:1rem;
     }
 
@@ -589,6 +591,10 @@ button.secondary{
         height: 25%;
         transform:none;   
         
+    }
+
+    .service_card h4{
+        color: var(--clr-black);
     }
 
     .service_card:hover i{
@@ -603,6 +609,26 @@ button.secondary{
         transition-property: color;
         transition-duration:0.5s;
         transition-delay: 0.2s;
+    }
+
+    .services button{
+        display:block;
+        position: relative;
+        margin-top: 1rem;
+        opacity: 1;
+        bottom: 0;
+    }
+
+    .service_card:hover > button{
+        display:block;
+        opacity:1;
+        position: relative;
+        bottom:0;
+    }
+
+    .services i,
+    .services :hover > i{
+        font-size: 36px;
     }
     
     
@@ -621,20 +647,22 @@ button.secondary{
 }
 
 .mission_img{
-    width: 60%;
-    height: 300px;
-    background-color: #D6D6D6;
-    background-image: url('img/mission.jpg');
+    width: 50%;
+    height: 350px;
+    background-color: #ff5f5f;
     background-blend-mode: luminosity;
+    background-image: url('img/mission_2.jpg');
     background-size:cover;
+    background-position: center;
 }
 
 .mission_text{
     position:absolute;
     right:2rem;
-    margin-top: 120px;
+    margin-top: 10rem;
     width: 60%;
-    background-color: var(--clr-primary);
+    
+    border:5px solid var(--clr-black);
     display: flex;
     flex-direction: column;
     padding: 3rem 4rem;
@@ -644,18 +672,26 @@ button.secondary{
 
 .mission_text p{
     width: 70%;
-    color:white;
+    color:var(--clr-black);
     margin: 2rem 0;
 }
 
 .mission_text h2{
-    color:white;
+    color:var(--clr-black);
     
 }
 
 .mission_deco{
-    position:absolute;
+   
     left: -5rem;
+    position:absolute;
+    left: 0;
+    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    border: 0.4rem solid var(--clr-primary);
+    z-index: -1;
+    
 
 
 }
@@ -670,39 +706,36 @@ button.secondary{
 
     .mission{
         height: auto;
-        margin-top:1rem;
+        width: 100%;
+        margin-top:10rem;
         padding: 2rem 0;
         position:relative;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: start;
+        align-items: stretch;
         flex-direction: column-reverse;
 
     }
 
     .mission_img{
         position:absolute;
-        top: 0;
-        right:0;
+        top: -5rem;
+        left:1rem;
         width: 80%;
-        height: 60vh;
-        background-color: #D6D6D6;
-        background-image: url('img/mission.jpg');
+        height: 80vh;
+   
         background-blend-mode: luminosity;
         background-size:cover;
     }
     
     .mission_text{
         position:relative;
-        margin: 0% 5% 0 20%;
+        margin: 0;
+        right:0;
         width: 100%;
         height: auto;
-        background-color: var(--clr-primary);
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 1rem;
-        align-items:flex-start;
-        justify-content: space-between;
+
+        
     }
     
     .mission_text p{
@@ -717,10 +750,7 @@ button.secondary{
     
     
     .mission_deco{
-        position:absolute;
-        top: 1rem;
-    
-    
+        display: none;   
     }
     
     .mission_deco i{
@@ -737,15 +767,30 @@ button.secondary{
     position:relative;
     display: flex;
     margin-top: 12rem;
-    
+    margin-bottom: 8rem;
     height: auto;
+   background-color: var(--clr-grey);
+   padding: 2rem 0;
+}
+
+
+
+
+.reasons_wrap{
+    margin: 3rem;
+    margin-right:4rem;
+    width:50%;
+    
+   
 }
 
 .whyus_left{
+    width: 100%;
+    border-right: 2px solid var(--clr-primary);
+    
     display: grid;
-    width: 70%;
-    height: 70%;
-    padding-top: 4rem;
+    
+    
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "reason1 reason2"
@@ -755,7 +800,7 @@ button.secondary{
 
 
 .reason{
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     align-self: start;
 
 }
@@ -766,12 +811,13 @@ button.secondary{
 
 
 .whyus_right{
-    padding: 2rem 4rem 0 4rem;
+    padding: 1rem 4rem 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
     position:relative;
-    
+    width: 50%;
+ 
     
 }
 
@@ -781,84 +827,87 @@ button.secondary{
 }
 
 .why_img{
-    width: 70%;
+    width: 90%;
+    height: 75%;
     position:absolute;
-    bottom:0;
-    right:0;
-    z-index: -1;
-    
+    bottom:-4rem;
+    right:-2rem;
+    z-index: 5;
+    background-image: url('img/why.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #ff5f5f;
+    background-blend-mode: luminosity;
+    /*border-top-left-radius: 60%;*/
 
 }
 
-.whyus_deco{
-    position: absolute;
-    top:0;
-    left:2rem;
-    transform: rotate(-90deg);
-}
 
-.whyus_deco.two{
-    bottom: 0;
-    left: 0; 
-    transform: rotate(90deg);
 
-}
 
-.whyus_deco i{
-    font-size: 60px;
-    
-}
 
-@media(max-width:1000px){
+
+@media(max-width:800px){
 
     .whyus{
         position:relative;
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 2rem;
-        
+        margin-top: 5rem;
         height: auto;
+        padding:1rem 1rem 2rem 1rem;
+        
     }
 
+    .reasons_wrap{
+        margin: 1rem;
+        width:auto;
+        
+     }
+
     .whyus_left{
-        display: grid;
+        border-right:none;
+        border-left: 2px solid var(--clr-primary);
+        display: flex;
         width: 100%;
         height: auto;
-        padding-top: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "reason1"
-        "reason2" "reason3" "reason4";
+       flex-direction: column;
         
     }
     
     
     .reason{
         padding: 1rem;
+        padding-left:2rem;
             
     }
     
     .whyus_right{
-        padding: 2rem 0 0 0;
+        padding: 1rem 0 0 0;
         display: flex;
         flex-direction: column;
         justify-content: start;
         position:relative;
+        width:100%;
         
         
     }
     
     .whyus_right p{
-        width: 80%;
+        width: 70%;
         margin-top: 1rem;
     }
-    
+
     .why_img{
-        width: 100%;
-        position:relative;
-        margin-top: 1rem;
-    
+        position: relative;
+        width:100%;
+        height: 60vh;
+        bottom: 0;
+        right:0;
+        margin: 2rem 0 1rem 0;
     }
+    
+  
     
     .whyus_deco{
         position: absolute;
@@ -892,6 +941,7 @@ button.secondary{
     height: 300px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 4rem 6rem;
     /*margin-top: 12rem;*/
 
