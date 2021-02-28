@@ -30,6 +30,7 @@ h3{
 h1{
     font-size: 3rem;
     line-height: 1.1;
+
 }
 
 h2{
@@ -39,8 +40,9 @@ h2{
 
 h4{
     font-size: 1.25rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-weight: 500;
+    font-family:'roboto Mono',sans-serif;
 }
 
 p{
@@ -572,7 +574,7 @@ button.secondary{
         flex-direction: column;
         padding: 0;
         margin: auto 0;
-        margin-top:6rem;
+        margin-top:10rem;
         height: auto;
         
     }
@@ -629,6 +631,10 @@ button.secondary{
     .services i,
     .services :hover > i{
         font-size: 36px;
+    }
+
+    .service_card.last{
+        margin-bottom: 0;;
     }
     
     
@@ -707,7 +713,7 @@ button.secondary{
     .mission{
         height: auto;
         width: 100%;
-        margin-top:10rem;
+        margin-top:8rem;
         padding: 2rem 0;
         position:relative;
         display: flex;
@@ -719,10 +725,10 @@ button.secondary{
 
     .mission_img{
         position:absolute;
-        top: -5rem;
+        bottom: -3rem;
         left:1rem;
         width: 80%;
-        height: 70%;
+        height: 50%;
    
         background-blend-mode: luminosity;
         background-size:cover;
@@ -749,7 +755,14 @@ button.secondary{
     }
     
     
+    .mission_deco{
+        display: none;   
+    }
     
+    .mission_deco i{
+        font-size:40px;
+        color: var(--clr-primary);
+    }
     
 }
 
@@ -771,15 +784,16 @@ button.secondary{
 
 .reasons_wrap{
     margin: 3rem;
-    margin-right:4rem;
+    margin-right:3rem;
+    padding-right:2rem;
     width:50%;
-    
+    border-right: 2px solid var(--clr-primary);
    
 }
 
 .whyus_left{
     width: 100%;
-    border-right: 2px solid var(--clr-primary);
+   
     
     display: grid;
     
@@ -823,8 +837,8 @@ button.secondary{
     width: 90%;
     height: 75%;
     position:absolute;
-    bottom:-4rem;
-    right:-2rem;
+    bottom:-6rem;
+    right:-3rem;
     z-index: 5;
     background-image: url('img/why.jpg');
     background-size: cover;
@@ -846,7 +860,7 @@ button.secondary{
         position:relative;
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 5rem;
+        margin-top: 8rem;
         height: auto;
         padding:1rem 1rem 2rem 1rem;
         
