@@ -604,7 +604,7 @@ button.secondary{
     }
 
     .service_card p{
-        width:20rem;
+        width:auto;
         margin-top: 0.5rem;
         transition-property: color;
         transition-duration:0.5s;
@@ -722,7 +722,7 @@ button.secondary{
         top: -5rem;
         left:1rem;
         width: 80%;
-        height: 80vh;
+        height: 70%;
    
         background-blend-mode: luminosity;
         background-size:cover;
@@ -749,14 +749,7 @@ button.secondary{
     }
     
     
-    .mission_deco{
-        display: none;   
-    }
     
-    .mission_deco i{
-        font-size:40px;
-        color: var(--clr-primary);
-    }
     
 }
 
